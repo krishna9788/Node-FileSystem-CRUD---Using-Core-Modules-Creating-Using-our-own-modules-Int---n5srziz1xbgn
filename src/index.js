@@ -7,6 +7,8 @@ const myFileWriter = async (fileName, fileContent) => {
 	await fs.writeFile(fileName,fileContent)
 	// dont chnage function name
 }
+myFileWriter(fName, fContent)
+
 
 const myFileReader = async (fileName) => {
 	// write code here
@@ -14,7 +16,6 @@ const myFileReader = async (fileName) => {
 	return content.toString();
 	// dont chnage function name
 }
-
 myFileReader(fName).then(a=>console.log(a))
 
 
@@ -23,8 +24,8 @@ const myFileUpdater = async (fileName, fileContent) => {
 	return await fs.appendFile(fileName, fileContent)
 	// dont chnage function name
 }
-
 myFileUpdater(fName, "\nnew Content")
+
 
 const myFileDeleter = async (fileName) => {
 	// write code here
